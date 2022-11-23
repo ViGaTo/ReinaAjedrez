@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import javax.naming.OperationNotSupportedException;
 
+import org.iesalandalus.programacion.reinaajedrez.Color;
+import org.iesalandalus.programacion.reinaajedrez.Direccion;
+import org.iesalandalus.programacion.reinaajedrez.Posicion;
+import org.iesalandalus.programacion.reinaajedrez.Reina;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -137,7 +141,7 @@ class ReinaTest {
 	
 	@Test
 	void toStringImprimeCorrectamente() {
-		assertEquals("color=Blanco, posicion=(fila=1, columna=d)", reinaBlanca.toString(), CADENA_NO_ESPERADA);
+		assertEquals("color=BLANCO, posicion=(fila=1, columna=d)", reinaBlanca.toString(), CADENA_NO_ESPERADA);
 	}
 
 }
